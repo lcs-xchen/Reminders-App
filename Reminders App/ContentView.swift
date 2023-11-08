@@ -30,14 +30,18 @@ struct ContentView: View {
                     .imageScale(.large)
                     }
                     
+            .padding()
+            
                     Text("To do")
                         .multilineTextAlignment(.leading) // Align the text to the left
-                        .font(Font.system(size: 30))
+                        .font(Font.system(size: 40))
                         .bold()
                         .foregroundColor(.accentColor)
 
         }
         .padding()
+        
+        Text ("hi")
     }
 }
 
