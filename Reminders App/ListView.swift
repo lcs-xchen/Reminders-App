@@ -24,13 +24,17 @@ struct ListView: View {
                     .foregroundColor(.white)
             }
             
-            VStack {
-                Text(thingToDo)
-                Text(date)
+            
+            
+            VStack(alignment: .leading, spacing: 3) {
+                
+            Text(thingToDo)
+                    .font(Font.system(size: 21))
+            
+            
+            Text(date)
                     .foregroundColor(.gray)
                     
-                
-                
             }
         }
         
@@ -38,5 +42,5 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView(thingToDo: "Call mom", date: "   2023-11-16")
+    ListView(thingToDo: "Call mom", date: "2023-11-16")
 }

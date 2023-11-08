@@ -38,10 +38,13 @@ struct ContentView: View {
                         .bold()
                         .foregroundColor(.accentColor)
 
+            
+            ListView(thingToDo: "Call auto body shop", date: "2023-11-16")
+            
         }
         .padding()
         
-        Text ("hi")
+        
     }
 }
 
