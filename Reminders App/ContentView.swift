@@ -37,13 +37,19 @@ struct ContentView: View {
                         .font(Font.system(size: 40))
                         .bold()
                         .foregroundColor(.accentColor)
-
+                        .padding()
             
-            ListView(thingToDo: "Call auto body shop", date: "2023-11-16")
+            
+            List {
+                Group {
+                    ListViewWithSymbol(thingToDo: "Pet my dog", date: "Today", symbol: Image(systemName: "circle"))
+                }
+            }
+            .listStyle(.plain)
             
         }
-        .padding()
-        
+       
+    
         
     }
 }
