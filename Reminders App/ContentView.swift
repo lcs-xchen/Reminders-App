@@ -42,10 +42,45 @@ struct ContentView: View {
             
             List {
                 Group {
-                    ListViewWithSymbol(thingToDo: "Pet my dog", date: "Today", symbol: Image(systemName: "circle"))
+                    ListViewWithoutSymbol(thingToDo: "Call auto body shop", date: "2023-11-16")
+                    
+                    ListViewWithSymbol(thingToDo: "Feed Piper", date: "Tomorrow, 8:00 AM", symbol: Image(systemName: "repeat"), howOften: "Daily")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Write lesson about interactive apps", date: "Tomorrow, 6:00 PM")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Take Piper to the vet", date: "2023-11-29, 3:00 PM")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Drop off donations at Goodwill", date: "2023-11-11")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Call plumber about clog in sink", date: "Tomorrow, 2:00 PM")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Call dentist to schedule appointment", date: "Tomorrow, 2:00 PM")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Call dentist to schedule appointment", date: "2023-11-06, 4:00 PM")
+                    
+                    ListViewWithoutSymbol(thingToDo: "Call mechanic to get TARDIS repaired", date: "Tomorrow, 12:00 PM")
+                    
                 }
             }
             .listStyle(.plain)
+            
+            
+            
+            HStack {
+                
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 40)
+                .foregroundColor(.accentColor)
+                
+                Text("New Reminder")
+                    .bold()
+                    .font(Font.system(size: 28))
+                    .foregroundColor(.accentColor)
+                
+            }
+            .padding()
             
         }
        

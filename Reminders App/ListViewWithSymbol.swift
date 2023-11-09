@@ -11,6 +11,7 @@ struct ListViewWithSymbol: View {
     let thingToDo: String
     let date: String
     let symbol: Image
+    let howOften: String
     
     
     var body: some View {
@@ -40,6 +41,9 @@ struct ListViewWithSymbol: View {
                     Text("\(date), \(symbol)")
                         .foregroundColor(.gray)
                     
+                    Text (howOften)
+                        .foregroundColor(.gray)
+                    
                 }
                     
 
@@ -50,5 +54,5 @@ struct ListViewWithSymbol: View {
 }
 
 #Preview {
-    ListViewWithSymbol(thingToDo: "call mom", date: "2023-11-16", symbol: Image(systemName: "repeat"))
+    ListViewWithSymbol(thingToDo: "call mom", date: "2023-11-16", symbol: Image(systemName: "repeat"),howOften: "Daily")
 }
